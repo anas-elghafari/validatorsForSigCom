@@ -1,5 +1,5 @@
 import axios from 'axios'
-const assert = require('assert') //my node env did not support "import assert..."
+const assert = require('assert') // node env v 9 did not support "import assert..."
 
 function mapToUniPort(prot:string): Promise<any> {
   return axios.get("https://www.ebi.ac.uk/proteins/api/proteins", {
